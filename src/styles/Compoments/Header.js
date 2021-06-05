@@ -11,7 +11,7 @@ export const Nav = styled.nav`
     text-alignn:right;
     height:70px;
     line-height:70px;
-    width:1100px;
+    width:1200px;
 `;
 
 export const Menu =styled.div`

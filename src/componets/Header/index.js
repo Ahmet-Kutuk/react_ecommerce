@@ -2,7 +2,7 @@ import React from 'react'
 import {Nav,Menu,MenuItem,Active,NavContainer} from '../../styles/Compoments/Header';
 function Header() {
     return (
-    <NavContainer>
+     <NavContainer>
         <Nav>
             <label htmlFor="toggle">&#9776;</label>
             <input type="checkbox" id="toggle"></input>
