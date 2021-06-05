@@ -1,5 +1,6 @@
 import React from 'react'
 import {Nav,Menu,MenuItem,Active,NavContainer} from '../../styles/Compoments/Header';
+import {Link} from 'react-router-dom';
 function Header() {
     return (
      <NavContainer>
@@ -7,11 +8,11 @@ function Header() {
             <label htmlFor="toggle">&#9776;</label>
             <input type="checkbox" id="toggle"></input>
             <Menu className="menu">
-                <MenuItem href="dfsd"><Active>Home</Active></MenuItem>
-                <MenuItem href="dfsd">Category</MenuItem>
-                <MenuItem href="dfsd">Basket</MenuItem>
-                <MenuItem href="dfsd">Favorite</MenuItem>
-                <MenuItem href="dfsd">Contact</MenuItem>
+                <Link to="/"><MenuItem href="dfsd"><Active>Home</Active></MenuItem></Link>
+               <Link to="/basket"> <MenuItem href="dfsd">Basket</MenuItem> </Link>
+               <Link to="/favorite"> <MenuItem href="dfsd">Favorite</MenuItem> </Link>
+               <Link to="/category"> <MenuItem href="dfsd">Category</MenuItem> </Link>
+               <Link to="/contact"> <MenuItem href="dfsd">Contact</MenuItem> </Link>
             </Menu>
         </Nav>
     </NavContainer>

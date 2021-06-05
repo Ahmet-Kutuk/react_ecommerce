@@ -2,15 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/main.scss';
 import App from './App';
+import CategoryComponent from './componets/Category';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
+import {ContextProvider} from './Context';
 
 
 ReactDOM.render(
   <BrowserRouter>
+    <ContextProvider>
     <Switch>
-    <Route exact path="/" component={App} />
+      <Route exact path="/" component={App} />
+      <Route path="/category" component={CategoryComponent} />
     </Switch>
+    </ContextProvider>
   </BrowserRouter>,
   document.getElementById('root')
 );

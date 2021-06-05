@@ -29,7 +29,7 @@ export const Menu =styled.div`
 export const MenuItem = styled.a`
     text-decoration:none;
     color:grey;
-    margin:0 90px;
+    margin:0 80px;
     line-height:70px;
     clear:right;
 
