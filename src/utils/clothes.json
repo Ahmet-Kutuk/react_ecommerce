@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Regrets White Woman T-Shirt",
             "image": "https://images.pexels.com/photos/1188748/pexels-photo-1188748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "availableSizes": ["S", "M"],
+            "sizes": ["S", "M"],
             "price": 19.9
           },
       
@@ -12,7 +12,7 @@
             "id": 2,
             "title": "White Man Oversize T-Shirt",
             "image": "https://images.pexels.com/photos/4066290/pexels-photo-4066290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "availableSizes": ["L","XL"],
+            "sizes": ["L","XL"],
             "price": 49.9
           },
       
@@ -20,14 +20,14 @@
             "id": 3,
             "title": "Yellow Man Hoodie",
             "image": "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-            "availableSizes": ["L"],
+            "sizes": ["L"],
             "price": 69.0
           },
           {
             "id": 4,
             "title": "Champion Woman White T-Shirt",
             "image": "https://images.pexels.com/photos/3702587/pexels-photo-3702587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-            "availableSizes": ["XS", "X"],
+            "sizes": ["XS", "X"],
             "price": 29.9
           },
       
@@ -35,7 +35,7 @@
             "id": 5,
             "title": "Oversize Black Man T-Shirt",
             "image": "https://images.pexels.com/photos/3399995/pexels-photo-3399995.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-            "availableSizes": ["XL", "XXL"],
+            "sizes": ["XL", "XXL"],
             "price": 39.9
           },
       
@@ -43,7 +43,7 @@
             "id": 6,
             "title": "Regular Man Grey T-Shirt",
             "image": "https://images.pexels.com/photos/6649010/pexels-photo-6649010.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-            "availableSizes": ["X"],
+            "sizes": ["X"],
             "price": 20.9
           },
       
@@ -51,7 +51,7 @@
             "id": 7,
             "title": "Flower Woman Dress",
             "image": "https://images.pexels.com/photos/6773212/pexels-photo-6773212.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-            "availableSizes": ["X"],
+            "sizes": ["X"],
             "price": 59.9
           },
       
@@ -59,7 +59,7 @@
             "id": 8,
             "title": "Man White Hoodie",
             "image": "https://images.pexels.com/photos/6311156/pexels-photo-6311156.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-            "availableSizes": ["X", "L"],
+            "sizes": ["X", "L"],
             "price": 39.9
           },
       
@@ -67,7 +67,7 @@
             "id": 9,
             "title": "Black Woman Hoodie",
             "image": "https://images.pexels.com/photos/6311540/pexels-photo-6311540.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-            "availableSizes": ["M"],
+            "sizes": ["M"],
             "price": 65.9
           },
       
@@ -75,7 +75,7 @@
             "id": 10,
             "title": "Good Vibes Yellow Man T-Shirt",
             "image": "https://images.pexels.com/photos/6930504/pexels-photo-6930504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "availableSizes": ["X", "L", "XL"],
+            "sizes": ["X", "L", "XL"],
             "price": 79.9
           },
       
@@ -83,7 +83,7 @@
             "id": 11,
             "title": "Man Grey T-Shirt",
             "image": "https://images.pexels.com/photos/6311657/pexels-photo-6311657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "availableSizes": ["XL", "XXL"],
+            "sizes": ["XL", "XXL"],
             "price": 49.9
           },
       
@@ -91,7 +91,7 @@
             "id": 12,
             "title": "Man Blue T-Shirt",
             "image": "https://images.pexels.com/photos/5425043/pexels-photo-5425043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "availableSizes": ["S"],
+            "sizes": ["S"],
             "price": 19.9
           }
     ]

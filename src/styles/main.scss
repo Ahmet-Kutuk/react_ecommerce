@@ -1,2 +1,29 @@
 @import "./config/normalize.scss";
 @import "./config/formalize.scss";
+
+
+
+label{
+    margin:0 40px 0 0;
+    font-size:26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+
+    @media (max-width: 768px) {
+    
+        display: block;
+        cursor:pointer;
+    }
+}
+
+#toggle{
+    display: none;
+
+    @media (max-width: 768px) {
+        &:checked+ .menu {
+            display: block;
+        }
+    }
+}

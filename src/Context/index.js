@@ -2,7 +2,7 @@ import React,{ createContext } from 'react';
 
 export const Context = createContext();
 
-const ContextProvider = (props) => {
+export const ContextProvider = (props) => {
 
     return(
         <Context.Provider>
@@ -11,4 +11,3 @@ const ContextProvider = (props) => {
     )
 }
 
-export default ContextProvider;
