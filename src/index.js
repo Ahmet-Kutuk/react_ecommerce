@@ -6,7 +6,8 @@ import CategoryComponent from './componets/Category';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import {ContextProvider} from './Context';
-
+import WomanCompoment from './componets/Woman';
+import ManCompoment from './componets/Man';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -14,6 +15,8 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/category" component={CategoryComponent} />
+      <Route path="/woman" component={WomanCompoment} />
+      <Route path="/man" component={ManCompoment} />
     </Switch>
     </ContextProvider>
   </BrowserRouter>,
