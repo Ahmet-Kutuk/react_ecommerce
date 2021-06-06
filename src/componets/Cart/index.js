@@ -1,7 +1,7 @@
-import React,{useContext,useState,useEffect} from 'react'
+import React,{useContext} from 'react'
 import Cart from './Cart'
 import Header from '../Header';
-import {CartContainer,Info,List} from '../../styles/Compoments/Cart';
+import {CartContainer,List} from '../../styles/Compoments/Cart';
 import Context from '../../Context';
 function CartCompoment() {
     const {cart} = useContext(Context);

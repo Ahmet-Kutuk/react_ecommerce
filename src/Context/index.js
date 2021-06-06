@@ -7,8 +7,8 @@ export const ContextProvider = (props) => {
     const [products,setProducts] = useState();
     const [categories,setCategories] = useState();
     const [favorites,setFavorites] = useState([]);
+    const [detail,setDetail] = useState([]);
     const [cart,setCart] = useState([]);
-    const [total,setTotal] = useState(120);
     useEffect(() => {
         // eslint-disable-next-line no-unused-vars
         const data = axios.get('https://60b12c121f2661001700005c.mockapi.io/products')
@@ -30,15 +30,13 @@ export const ContextProvider = (props) => {
     },[cart])
 
 
-    const addFavorite = (id) => {
-       const filt =  products.find(product => product.id === Number(id));
+    const addFavorite = (title) => {
+       const filt =  products.find(product => product.title === title);
        setFavorites(prevState => [...prevState,filt]);
     }
-    const addCart = (id) => {
-        const filt =  products.find(product => product.id == id);
+    const addCart = (title) => {
+        const filt =  products.find(product => product.title === title);
         setCart(prevState => [...prevState,filt]);
-        const priceArr = cart.filter(item => item.id == id);
-             setTotal(prevState => prevState+=priceArr);
      };
 
      const deleteCart = (title) =>  {
@@ -46,9 +44,9 @@ export const ContextProvider = (props) => {
         const parseArr = JSON.parse(array); // make a separate copy of the array
         const filterArr = parseArr.filter(item => item.title !== title);
         localStorage.setItem('cart',JSON.stringify(filterArr));
-             setCart(filterArr); 
-             const priceArr = parseArr.filter(item => item.title === title);
-             setTotal(prevState => prevState-=priceArr);
+           return  setCart(filterArr); 
+             
+             
       };
 
     const deleteFavorite = (title) =>  {
@@ -58,11 +56,16 @@ export const ContextProvider = (props) => {
         localStorage.setItem('favorite',JSON.stringify(filterArr));
              return setFavorites(filterArr);
       };
+
+      const showDetail = (title) => {
+        const filt =  products.find(product => product.title === title);
+        setDetail(filt);
+      }
       
 
 
     return(
-        <Context.Provider value={{products,categories,addFavorite,deleteFavorite,favorites,addCart,cart,deleteCart,total}}>
+        <Context.Provider value={{products,categories,addFavorite,deleteFavorite,favorites,addCart,cart,deleteCart,detail,showDetail}}>
             {props.children}
         </Context.Provider>
     )

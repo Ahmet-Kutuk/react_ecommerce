@@ -1,4 +1,4 @@
-import React,{useEffect,useState,useContext} from 'react'
+import React,{useContext} from 'react'
 import Favorite from './Favorite'
 import Header from '../Header/index';
 import Context from '../../Context';
@@ -6,14 +6,6 @@ import { FavoriteContainer,FavoriteList } from '../../styles/Compoments/Favorite
 
 function FavoriteCompoment() {
     const {favorites} = useContext(Context)
-        //  const [list,SetList] = useState();
-    console.log(favorites);
-
-    // useEffect(() => {
-    //     const data = localStorage.getItem('favorite');
-    //     const pars = JSON.parse(data);
-    //     SetList(pars);
-    // },[favorite])
 
     return (
         <>

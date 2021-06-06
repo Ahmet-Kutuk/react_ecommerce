@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import {CardItem,ActionContainer,ActionButton,CardInfo,CardImg} from '../../styles/Compoments/Card';
 import Context from '../../Context';
 function Card(props) {
-    const {addFavorite,addCart} = useContext(Context);
+    const {addFavorite,addCart,showDetail} = useContext(Context);
     
     return (
             <CardItem>
@@ -12,9 +12,9 @@ function Card(props) {
                   <p>Price: {props.price}$ </p>
                 </CardInfo>
                 <ActionContainer>
-                    <ActionButton id={props.id} onClick={(e) => addFavorite(e.currentTarget.id)} className="action-item" href="s"><i className="fas fa-heart"></i></ActionButton>
-                    <ActionButton id={props.id} onClick={(e) => addCart(e.currentTarget.id)} className="action-item" href="s"><i className="fas fa-shopping-basket"></i></ActionButton>
-                    <ActionButton className="action-item" href="s"><i className="fas fa-eye"></i></ActionButton>
+                    <ActionButton  onClick={() => addFavorite(props.title)} className="action-item" href="s"><i className="fas fa-heart"></i></ActionButton>
+                    <ActionButton  onClick={() => addCart(props.title)} className="action-item" href="s"><i className="fas fa-shopping-basket"></i></ActionButton>
+                    <ActionButton onClick={() => showDetail(props.title) } className="action-item" href="s"><i className="fas fa-eye"></i></ActionButton>
                 </ActionContainer>
             </CardItem>
     )
