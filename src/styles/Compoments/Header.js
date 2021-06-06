@@ -26,7 +26,7 @@ export const Menu =styled.div`
 
 `;
 
-export const MenuItem = styled.a`
+export const MenuItem = styled.span`
     text-decoration:none;
     color:grey;
     margin:0 80px;

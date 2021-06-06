@@ -6,11 +6,11 @@ function CardComponent() {
     const data = useContext(Context);
     const products = data.products;
 
-    return (
+  return  (
         <>  
         <CardContainer>
            {products ? products.map(item => (
-               <Card key={item.id} title={item.title} price={item.price} image={item.image} />
+               <Card key={item.id} title={item.title} id={item.id}  price={item.price} image={item.image} />
            )):<h1>Yükleniyor..</h1>}
          </CardContainer>
         </>

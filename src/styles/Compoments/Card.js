@@ -70,6 +70,7 @@ export const CardItem = styled.div`
 export const ActionButton = styled.button`
     font-size:36px;
     cursor: pointer;
+    
 
 `;
 
@@ -80,6 +81,7 @@ export const ActionContainer = styled.div`
     align-items:center;
     position:absolute;
     bottom:0;
+    z-index:5;
 
     
 `;

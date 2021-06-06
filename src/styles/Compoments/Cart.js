@@ -12,12 +12,20 @@ export const CartContainer = styled.div`
         width:300px;
     }
 `
+export const List = styled.div`
+    display: flex;
+    flex-direction:column;
+
+
+`;
+
 
 export const CartList = styled.div`
     width:800px;
     border:1px solid #EAEAEB;
     display: flex;
     position:relative;
+    flex-direction:row;
 
     @media (max-width: 768px) {
         flex-direction:column;
@@ -27,8 +35,13 @@ export const CartList = styled.div`
         top:150px;
     }
 
+    &+&{
+        margin-top:50px;
+    }
 
     h1{
+        margin-top:20px;
+        font-size:24px;
         margin-left:1rem;
     }
     button{
@@ -53,7 +66,7 @@ export const CartList = styled.div`
         p{
             margin-left:1rem;
             margin-top:2rem;
-            font-size:48px;
+            font-size:36px;
         }
     }
 `;
