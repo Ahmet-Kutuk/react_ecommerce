@@ -9,12 +9,14 @@ import {ContextProvider} from './Context';
 import WomanCompoment from './componets/Woman';
 import ManCompoment from './componets/Man';
 import ContactCompoment from './componets/Contact';
+import CartCompoment from './componets/Cart';
 ReactDOM.render(
   <BrowserRouter>
     <ContextProvider>
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/category" component={CategoryComponent} />
+      <Route path="/cart" component={CartCompoment} />
       <Route path="/woman" component={WomanCompoment} />
       <Route path="/man" component={ManCompoment} />
       <Route path="/contact" component={ContactCompoment} />
