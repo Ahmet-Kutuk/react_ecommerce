@@ -8,7 +8,7 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import {ContextProvider} from './Context';
 import WomanCompoment from './componets/Woman';
 import ManCompoment from './componets/Man';
-
+import ContactCompoment from './componets/Contact';
 ReactDOM.render(
   <BrowserRouter>
     <ContextProvider>
@@ -17,6 +17,7 @@ ReactDOM.render(
       <Route path="/category" component={CategoryComponent} />
       <Route path="/woman" component={WomanCompoment} />
       <Route path="/man" component={ManCompoment} />
+      <Route path="/contact" component={ContactCompoment} />
     </Switch>
     </ContextProvider>
   </BrowserRouter>,

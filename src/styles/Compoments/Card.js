@@ -52,7 +52,7 @@ export const CardItem = styled.div`
     display:flex;
     flex-direction:column;
     box-shadow:0px 10px 10px 0px black;
-    margin-right:150px;
+    margin-left:78px;
     margin-top:30px;
     position:relative;
     

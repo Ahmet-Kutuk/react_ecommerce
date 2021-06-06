@@ -14,29 +14,7 @@ export const CategoryContainer = styled.div`
         flex-direction:column;
     }
 `;
-export const CategoryInfo = styled.div`
-    width:400px;
-    height:597px;
-    background:#00ead3;
-    opacity:0;
-    position:absolute;
-    display:flex;
-    text-align:center;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    
 
-    &:hover{
-        opacity:0.7;
-    }
-
-    p{
-        margin-top:0.4rem;
-        font-weight:700;
-        font-size:24px;
-    }
-`;
 
 export const CategoryImg = styled.img`
     width:100%;
@@ -52,7 +30,8 @@ export const CategoryItem = styled.div`
     display:flex;
     flex-direction:column;
     box-shadow:0px 10px 10px 0px black;
-    margin-right:150px;
+    margin-left:50px;
+    margin-right:110px;
     margin-top:30px;
     position:relative;
     
@@ -61,6 +40,7 @@ export const CategoryItem = styled.div`
     @media (max-width: 500px) {
         padding-left:15px;
         padding-right:15px;
+        margin:0;
     }
    
    
