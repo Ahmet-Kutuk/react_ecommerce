@@ -11,6 +11,7 @@ import ManCompoment from './componets/Man';
 import ContactCompoment from './componets/Contact';
 import CartCompoment from './componets/Cart';
 import FavoriteCompoment from './componets/Favorite';
+import DetayCompoment from './componets/Detay';
 ReactDOM.render(
   <BrowserRouter>
     <ContextProvider>
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Route path="/category" component={CategoryComponent} />
       <Route path="/cart" component={CartCompoment} />
       <Route path="/favorite" component={FavoriteCompoment} />
+      <Route path="/detail" component={DetayCompoment} />
       <Route path="/woman" component={WomanCompoment} />
       <Route path="/man" component={ManCompoment} />
       <Route path="/contact" component={ContactCompoment} />

@@ -70,6 +70,7 @@ export const CardItem = styled.div`
 export const ActionButton = styled.button`
     font-size:36px;
     cursor: pointer;
+    background:none;
     
 
 `;

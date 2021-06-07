@@ -57,9 +57,9 @@ export const ContextProvider = (props) => {
              return setFavorites(filterArr);
       };
 
-      const showDetail = (title) => {
+      const showDetail = async (title) =>  {
         const filt =  products.find(product => product.title === title);
-        setDetail(filt);
+        setDetail([filt]);
       }
       
 
