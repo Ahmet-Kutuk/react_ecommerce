@@ -1,13 +1,13 @@
-import React from 'react'
-import Contact from './Contact'
-import Header from '../Header';
+import React from "react";
+import Contact from "./Contact";
+import Header from "../Header";
 function ContactCompoment() {
-    return (
-        <>
-          <Header />
-          <Contact />   
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <Contact />
+    </>
+  );
 }
 
-export default ContactCompoment
+export default ContactCompoment;
