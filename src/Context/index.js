@@ -33,11 +33,19 @@ export const ContextProvider = (props) => {
 
   const addFavorite = (title) => {
     const filt = products.find((product) => product.title === title);
-    setFavorites((prevState) => [...prevState, filt]);
+    if(!favorites.includes(filt))
+    {
+      setFavorites((prevState) => [...prevState, filt]);
+    }
+   
   };
   const addCart = (title) => {
     const filt = products.find((product) => product.title === title);
-    setCart((prevState) => [...prevState, filt]);
+    if(!cart.includes(filt))
+    {
+      setCart((prevState) => [...prevState, filt]);
+    }
+    
   };
 
   const deleteCart = (title) => {
