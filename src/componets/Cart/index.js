@@ -18,6 +18,7 @@ function CartCompoment() {
                 price={item.price}
                 title={item.title}
                 image={item.image}
+                sizes={item.sizes}
               />
             ))
           ) : (

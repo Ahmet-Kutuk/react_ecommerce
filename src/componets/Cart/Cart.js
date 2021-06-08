@@ -12,8 +12,11 @@ function Cart(props) {
       <div className="ınfo">
         <h1>{props.title}</h1>
         <select>
-          <option value="S">S</option>
-          <option value="M">M</option>
+          {props.sizes.map((item) => (
+            <option key={item} value={`${item}`}>
+              {item}
+            </option>
+          ))}
         </select>
         <p>{props.price}</p>
       </div>

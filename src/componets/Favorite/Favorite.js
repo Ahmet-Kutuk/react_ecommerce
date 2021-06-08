@@ -12,7 +12,11 @@ function Favorite(props) {
       <div className="ınfo">
         <h1>{props.title}</h1>
         <select>
-          {/* {props.sizes.map(item  => (<option key="1" value={`${item}`}>{item}</option>))} */}
+          {props.sizes.map((item) => (
+            <option key={item} value={`${item}`}>
+              {item}
+            </option>
+          ))}
         </select>
         <p>{props.price}$</p>
       </div>
