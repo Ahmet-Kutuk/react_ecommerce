@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import {
   Nav,
   Menu,
@@ -7,7 +7,9 @@ import {
   NavContainer,
 } from "../../styles/Compoments/Header";
 import { Link } from "react-router-dom";
+import Context from "../../Context/index";
 function Header() {
+  const {favorites,cart} = useContext(Context);
   return (
     <NavContainer>
       <Nav>
@@ -21,11 +23,11 @@ function Header() {
           </Link>
           <Link to="/cart">
             {" "}
-            <MenuItem>Cart</MenuItem>{" "}
+            <MenuItem>Cart({cart.length})</MenuItem>{" "}
           </Link>
           <Link to="/favorite">
             {" "}
-            <MenuItem>Favorite</MenuItem>{" "}
+            <MenuItem>Favorite({favorites.length})</MenuItem>{" "}
           </Link>
           <Link to="/category">
             {" "}
