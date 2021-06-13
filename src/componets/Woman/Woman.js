@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   ActionContainer,
   CardImg,
@@ -6,8 +6,11 @@ import {
   CardItem,
   ActionButton,
 } from "../../styles/Compoments/Card";
+import Context from "../../Context";
+import { Link } from "react-router-dom";
 
 function Woman(props) {
+  const { addFavorite, addCart, showDetail } = useContext(Context);
   return (
     <>
       <CardItem>
@@ -17,15 +20,29 @@ function Woman(props) {
           <p>Price: {props.price}$</p>
         </CardInfo>
         <ActionContainer>
-          <ActionButton class="action-item" href="s">
+          <ActionButton
+            onClick={() => addFavorite(props.title)}
+            class="action-item"
+            href="s"
+          >
             <i class="fas fa-heart"></i>
           </ActionButton>
-          <ActionButton class="action-item" href="s">
+          <ActionButton
+            onClick={() => addCart(props.title)}
+            class="action-item"
+            href="s"
+          >
             <i class="fas fa-shopping-basket"></i>
           </ActionButton>
-          <ActionButton class="action-item" href="s">
-            <i class="fas fa-eye"></i>
-          </ActionButton>
+          <Link to="/detail">
+            <ActionButton
+              onClick={() => showDetail(props.title)}
+              class="action-item"
+              href="s"
+            >
+              <i class="fas fa-eye"></i>
+            </ActionButton>
+          </Link>
         </ActionContainer>
       </CardItem>
     </>
