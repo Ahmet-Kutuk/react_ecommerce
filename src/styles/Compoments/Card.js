@@ -12,7 +12,11 @@ export const CardContainer = styled.div`
   margin-bottom: 2rem;
   @media (max-width: 500px) {
     flex-direction: column;
+    position:relative;
+    right:40px;
   }
+
+    
 `;
 export const CardInfo = styled.div`
   width: 400px;
@@ -57,6 +61,8 @@ export const CardItem = styled.div`
   @media (max-width: 500px) {
     padding-left: 15px;
     padding-right: 15px;
+    width:300px;
+    height:500px;
   }
 `;
 
