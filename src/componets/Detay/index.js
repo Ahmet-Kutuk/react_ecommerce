@@ -5,7 +5,7 @@ import {DetailContainer} from '../../styles/Compoments/Detay';
 import Context from '../../Context';
 function DetayCompoment() {
     const {detail} = useContext(Context);
-    console.log(detail);
+    
     return (
     <>
         <Header />

@@ -18,7 +18,7 @@ function Cart(props) {
             </option>
           ))}
         </select>
-        <p>{props.price}</p>
+        <p>{props.price}$</p>
       </div>
     </CartList>
   );

@@ -6,6 +6,7 @@ import {
   CardInfo,
   CardImg,
 } from "../../styles/Compoments/Card";
+import {Link} from 'react-router-dom';
 import Context from "../../Context";
 function Card(props) {
   const { addFavorite, addCart, showDetail } = useContext(Context);
@@ -32,13 +33,13 @@ function Card(props) {
         >
           <i className="fas fa-shopping-basket"></i>
         </ActionButton>
-        <ActionButton
+        <Link to="/detail"><ActionButton
           onClick={() => showDetail(props.title)}
           className="action-item"
-          href="s"
+          
         >
           <i className="fas fa-eye"></i>
-        </ActionButton>
+        </ActionButton></Link>
       </ActionContainer>
     </CardItem>
   );
